@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            overflow: auto;
+        }
+        body {
+            background-color: aqua;
+            font-family: Arial;
+            margin: 0;
+        }
+        
+        
+        div.content {
+            background-color: white;
+            margin: 60px 10% 80px 10%;
+            padding: 0px 30px 30px 30px;
+            min-width: 320px;
+            box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+            overflow: visible;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        p.description {
+            text-align: center;
+            max-width: 400px;
+            display: inline-block;
+            font-size: 14px;
+        }
+        div.description {
+                             
+        }
+        p.category {
+            background-color: black;
+            color: white;
+            display: inline-block;
+            margin-left: 0;
+            margin-top: -20px;
+            margin-bottom: 0px;
+            padding: 8px 20px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        div.category {
+            margin-bottom: 0px;
+            margin-top: 0px;
+            overflow: visible;
+        }
+        .center {
+            text-align: center;
+            width: 100%;
+        }
+        div.separator {
+            background-color: black;
+            height: 1px;
+            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        div.info {
+            position: relative;
+        }
+        table.info {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            color: white;
+            background-color: rgba(0, 255, 255, 0.3);
+            height: 80px;
+        }
+        table.info td {
+            text-align: center;
+            vertical-align: top;
+            font-size: 14px;
+        }
+        table.info th {
+            vertical-align: bottom;
+            padding-bottom: 8px;
+            font-size: 16px;
+        }
+        div.column1, div.column2 {
+            width: 45%;
+            margin-top: 20px;
+        }
+        div.columns h2 {
+            text-align: center;
+            border-bottom: 4px solid black;
+            text-transform: uppercase;
+            font-size: 15px;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        div.column1 {
+            display: inline-block;
+            margin-right: 10%;
+        }
+        div.column2 {
+            float: right;
+        }
+        div.ingredients p {
+            border: 2px solid green;
+            text-align: center;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+        table.instructions p.number {
+            background-color: red;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            width: 25px;
+            height: 25px;
+            padding-top: 4px;
+            box-sizing: border-box;
+            border-radius: 50%;
+            margin: 0;
+
+        }
+        table.instructions p.instruction_step {
+            font-size: 14px;
+            padding-left: 10px;
+        }
+        table.instructions td {
+            vertical-align: top;
+        }
+        table.instructions td.instruction_step {
+            padding-left: 10px;
+            padding-bottom: 10px;
+            font-size: 14px;
+        }
+        table.instructions tr {
+            height: 40px;
+        }
+        table.instructions p {
+            margin: 0;
+        }
+       
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <div class="category center">    
+        <p class="category">Recipe</p>
+    </div>
+
+    <h1>Chocolate cake recipe</h1>
+
+    <div class="separator"></div>
+
+    <div class="description center">
+        <p class="description">"This chocolate cake recipe is a classic. This version of the recipe is fast and quick and your kids will love it."</p>
+    </div>
+    <div class="info">
+        <img class="center" style="display: block;" height="500" src="cake.jpg">
+
+        <table class="info">
+            <tr>
+                <th>Difficulty</th>
+                <th>Preparation</th>
+                <th>Cooking</th>
+                <th>Total time</th>
+            </tr>
+            <tr>
+                <td>Easy</td>
+                <td>10 min</td>
+                <td>25 min</td>
+                <td>35 min</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <div class="column1 columns">
+            <h2>Ingredients</h2>
+            <div class="ingredients"> 
+                <p>Dark chocolate: 200g</p>
+                <p>Butter: 200g</p>
+                <p>Sugar: 150g</p>
+                <p>Flour: 80g</p>
+                <p>Eggs: 4</p>
+            </div>
+        </div>
+        <div class="column2 columns">
+            <h2>Instructions</h2>
+            <table class="instructions">
+                <tr><td><p class="number">1</p></td><td class="instruction_step"><p>Melt the chocolate and the butter together</p></td></tr>
+                <tr><td><p class="number">2</p></td><td class="instruction_step"><p>Mix the sugar, eggs and the flour</p></td></tr>
+                <tr><td><p class="number">3</p></td><td class="instruction_step"><p>Mix everything to get a smooth dough</p></td></tr>
+                <tr><td><p class="number">4</p></td><td class="instruction_step"><p>Bake in the oven</p></td></tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
